@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD8C6CEB1B3F07EC00F758AA /* BLKTextDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8C6CEA1B3F07EC00F758AA /* BLKTextDrawer.swift */; };
+		FD8C6CED1B4024B100F758AA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8C6CEC1B4024B000F758AA /* CoreText.framework */; };
+		FD8C6CEF1B40254A00F758AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8C6CEE1B40254A00F758AA /* CoreGraphics.framework */; };
+		FD8C6CF11B40255000F758AA /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8C6CF01B40255000F758AA /* AppKit.framework */; };
 		FDEDBD7E1B35A17300D59186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBD7D1B35A17300D59186 /* AppDelegate.swift */; };
 		FDEDBD801B35A17300D59186 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBD7F1B35A17300D59186 /* ViewController.swift */; };
 		FDEDBD821B35A17300D59186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEDBD811B35A17300D59186 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD8C6CEA1B3F07EC00F758AA /* BLKTextDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLKTextDrawer.swift; sourceTree = "<group>"; };
+		FD8C6CEC1B4024B000F758AA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		FD8C6CEE1B40254A00F758AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FD8C6CF01B40255000F758AA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		FDEDBD7A1B35A17300D59186 /* BLKActFiller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLKActFiller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEDBD7D1B35A17300D59186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDEDBD7F1B35A17300D59186 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,15 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD8C6CF11B40255000F758AA /* AppKit.framework in Frameworks */,
+				FD8C6CEF1B40254A00F758AA /* CoreGraphics.framework in Frameworks */,
+				FD8C6CED1B4024B100F758AA /* CoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD8C6CE91B3F079F00F758AA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FD8C6CEA1B3F07EC00F758AA /* BLKTextDrawer.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		FDEDBD711B35A17300D59186 = {
 			isa = PBXGroup;
 			children = (
+				FD8C6CF01B40255000F758AA /* AppKit.framework */,
+				FD8C6CEE1B40254A00F758AA /* CoreGraphics.framework */,
+				FD8C6CEC1B4024B000F758AA /* CoreText.framework */,
 				FDEDBD7C1B35A17300D59186 /* BLKActFiller */,
 				FDEDBD7B1B35A17300D59186 /* Products */,
 			);
@@ -52,6 +74,7 @@
 		FDEDBD7C1B35A17300D59186 /* BLKActFiller */ = {
 			isa = PBXGroup;
 			children = (
+				FD8C6CE91B3F079F00F758AA /* Classes */,
 				FDEDBD7D1B35A17300D59186 /* AppDelegate.swift */,
 				FDEDBD7F1B35A17300D59186 /* ViewController.swift */,
 				FDEDBD811B35A17300D59186 /* Assets.xcassets */,
@@ -130,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD8C6CEB1B3F07EC00F758AA /* BLKTextDrawer.swift in Sources */,
 				FDEDBD801B35A17300D59186 /* ViewController.swift in Sources */,
 				FDEDBD7E1B35A17300D59186 /* AppDelegate.swift in Sources */,
 			);
@@ -272,6 +296,7 @@
 				FDEDBD8B1B35A17300D59186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
