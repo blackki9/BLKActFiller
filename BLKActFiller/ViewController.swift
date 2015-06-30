@@ -53,11 +53,13 @@ class ViewController: NSViewController {
         
         let tableFont = NSFont(name:"Times New Roman",size : 16)
         
-        let hoursAmountLabel = BLKTextOnImageLabel(text:self.hoursTextField.stringValue,position: NSPoint(x:600,y: 1025), font:tableFont)
+        let hoursAmountLabel = BLKTextOnImageLabel(text:self.hoursTextField.stringValue,position: NSPoint(x:580,y: 1025), font:tableFont)
         let rateLabel = BLKTextOnImageLabel(text: self.rateTextfield.stringValue, position: NSPoint(x:700,y:1025), font: tableFont)
         
-        let sum = self.hoursTextField.integerValue * self.rateTextfield.integerValue
-        let sumLabel = BLKTextOnImageLabel(text: String(sum), position: NSPoint(x:780,y:1025), font: tableFont)
+        let sum = self.hoursTextField.doubleValue * self.rateTextfield.doubleValue
+        var sumString:String = String(format:"%.2f", sum)
+
+        let sumLabel = BLKTextOnImageLabel(text: String(sumString), position: NSPoint(x:780,y:1025), font: tableFont)
         
         let sumInEnglishLabel = BLKTextOnImageLabel(text: self.sumTextField.stringValue, position: NSPoint(x:120,y:870), font: tableFont)
         let sumInRussianLabel = BLKTextOnImageLabel(text: self.sumRusField.stringValue,position:NSPoint(x:120,y:845), font:tableFont)
